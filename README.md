@@ -1,1 +1,2 @@
-# Isaac-14_05_2025
+# GLORY
+Ssimple app for church
