@@ -232,25 +232,23 @@ function togglePrograms() {
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
-  
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (window.innerWidth <= 600) {
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
+            observer.unobserve(entry.target); // 🔒 Stop observing once shown
           }
         }
       });
     }, {
       threshold: 0.1
     });
-  
+
     cards.forEach(card => observer.observe(card));
   });
-  </script>
-  
+</script>
   
 </body>
 </html>
