@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Android-Style Web App</title>
+  <link rel="stylesheet" href="styles.css">
+   <!-- FontAwesome for the search icon -->
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Video Section 
+  <div class="video-container">
+    <video autoplay muted loop controls>
+      <source src="doc.mp4" type="video/mp4" />
+      Your browser does not support video playback.
+    </video>
+  </div>-->
+
+  <div class="heading-box">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>The Finished Work</h1>
+  </div>
+
+  <!-- 📌 TOGGLE BUTTON & PROGRAM LIST -->
+<div class="programs-container">
+  <button class="toggle-btn" onclick="togglePrograms()">👉Quick access</button>
+  
+  <ul class="program-list" id="programList">
+    <li><a href="encounter.html">👉Video Sermons</a></li>
+    <li><a href="transformation.html">👉Live TV</a></li>
+    <li><a href="membership.html">👉Testimonies</a></li>
+    <li><a href="evangelism.html">👉Audio Sermons</a></li>
+    <li><a href="discipleship.html">👉Church Projects</a></li>
+    <li><a href="encounter.html">👉Growth Classes</a></li>
+    <li><a href="transformation.html">👉Give Tithe & Offering</a></li>
+    <li><a href="membership.html">👉GCC Tik Tok</a></li>
+    <li><a href="evangelism.html">👉Up Next</a></li>
+    <li><a href="discipleship.html">👉Lineage on Duty</a></li>
+    <li><a href="encounter.html">👉Online Bible</a></li>
+    <li><a href="transformation.html">👉Heart to Heart</a></li>
+    <li><a href="membership.html">👉Buy Land</a></li>
+    <li><a href="evangelism.html">👉Glory Motors</a></li>
+    <li><a href="discipleship.html">👉Glory Sacco</a></li>
+    <li><a href="evangelism.html">👉Community Market</a></li>
+    <li><a href="discipleship.html">👉Take Notes</a></li>
+  </ul>
+</div>
+<!-- JS Toggle Function -->
+<script>
+function togglePrograms() {
+  const list = document.getElementById("programList");
+  list.style.display = (list.style.display === "block") ? "none" : "block";
+}
+</script>
+  
+  <div class="scripture">
+    <p id="scrip">2 Corinthians 4:4</p>
+  </div>
+
+  <div class="image-box">
+    <img src="bishop.png" alt="Image">
+  </div>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide">
+      <img src="free.jpg" alt="Slide 1">
+      <div class="description">
+        <a href="page2.html" class="watch-button">WATCH NOW</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="godi2.jpg" alt="Slide 2">
+      <div class="description">
+        <a href="page1.html" class="watch-button">WATCH NOW</a>
+      </div>
+    </div>
+     <div class="slide">
+      <img src="quz.jpg" alt="Slide 2">
+      <div class="description">
+        <a href="page1.html" class="watch-button">WATCH NOW</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="children.jpg" alt="Slide 3">
+      <div class="description">
+        <a href="page3.html" class="watch-button">WATCH NOW</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="search-container">
+    <i class="fas fa-search icon"></i>
+    <input type="text" placeholder="Search...">
+  </div>
+
+   
+  <!-- Notifications Section 
+  <div class="notification-box" id="notificationArea">
+    🔔 Admin Notice: New updates available. Please check back regularly.
+  </div>-->
+
+  <!-- Category: Media -->
+<h2 class="category-heading">Media</h2>
+<div class="cards">
+  <a href="page1.html" class="card-link">
+    <div class="card">
+      <img src="vidse.jpg" alt="Image 1" />
+      <h3>Video Sermons</h3>
+    </div>
+  </a>
+  <a href="page1.html" class="card-link">
+    <div class="card">
+      <img src="tv.jpg" alt="Image 1" />
+      <h3>Live TV</h3>
+    </div>
+  </a>
+  <a href="page1.html" class="card-link">
+    <div class="card">
+      <img src="test.png" alt="Image 1" />
+      <h3>Testimonies</h3>
+    </div>
+  </a>
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="aux.jpg" alt="Image 4" />
+      <h3>Audio Sermons</h3>
+    </div>
+  </a>
+</div>
+
+  <!-- Category: Church Programs -->
+<h2 class="category-heading">Church Programs</h2>
+<div class="cards">
+  <a href="projects.html" class="card-link">
+    <div class="card">
+      <img src="project.jpg" alt="Image 1" />
+      <h3>Church Projects</h3>
+    </div>
+  </a>
+  <a href="classes.html" class="card-link">
+    <div class="card">
+      <img src="class.jpg" alt="Image 2" />
+      <h3>Growth Classes</h3>
+    </div>
+  </a>
+  <a href="tithe.html" class="card-link">
+    <div class="card">
+      <img src="tithe.jpg" alt="Image 3" />
+      <h3>Give Your Tithe</h3>
+    </div>
+  </a>
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="enterte.jpg" alt="Image 4" />
+      <h3>GCC tik tok</h3>
+    </div>
+  </a>
+    <a href="page2.html" class="card-link">
+    <div class="card">
+      <img src="gloryb.jpg" alt="Image 2" />
+      <h3>Up Next</h3>
+    </div>
+  </a>
+</div>
+
+<!-- Category: Bible & Worship -->
+<h2 class="category-heading">Bible & Worship</h2>
+<div class="cards">
+  <a href="page3.html" class="card-link">
+    <div class="card">
+      <img src="lin.jpg" alt="Image 3" />
+      <h3>Lineage on duty</h3>
+    </div>
+  </a>
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="bib.jpg" alt="Image 4" />
+      <h3>Bible</h3>
+    </div>
+  </a>
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="hat.jpg" alt="Image 4" />
+      <h3>Heart to Heart</h3>
+    </div>
+  </a>
+</div>
+
+<!-- Category: Marketplace -->
+<h2 class="category-heading">Kingdom Trade</h2>
+<div class="cards">
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="real.jpg" alt="Image 4" />
+      <h3>Buy Land</h3>
+    </div>
+  </a>
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="kaz.jpg" alt="Image 4" />
+      <h3>Glory Motors</h3>
+    </div>
+  </a>
+    <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="sac.png" alt="Image 4" />
+      <h3>Glory Sacco</h3>
+    </div>
+  </a>
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="sold.jpg" alt="Image 4" />
+      <h3>Community Market</h3>
+    </div>
+  </a>
+</div>
+
+<!-- Category: Utilities -->
+<h2 class="category-heading">Utilities</h2>
+<div class="cards">
+  <a href="page4.html" class="card-link">
+    <div class="card">
+      <img src="noty.jpg" alt="Image 4" />
+      <h3>Take Notes</h3>
+    </div>
+  </a>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (window.innerWidth <= 600) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          } else {
+            entry.target.classList.remove('show');
+          }
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    cards.forEach(card => observer.observe(card));
+  });
+  </script>
+  
+  
+</body>
+</html>
